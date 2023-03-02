@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+        
+    <div class='header'> 
+        <h1>5 DAY WEATHER FORCAST</h1>
+    </div>
+ <p class="sidenav" id="inputcontainer" ></p>
+      City lookup: <input type="text" id="cityInput" />
+    </p>
+    <button onclick="GetInfo()" class="button">Search</button>
+    
+
+    <center>
+        <div id = "weatherContainer">
+            <div id="iconsContainer">    
+                <div class = "icons">
+                    <p class="weatherDay" id="day1">Monday</p>
+                    <div class="image"><img src="dots.png" class="imgClass" id="img1"></div>
+                    <p class="minValues" id="day1Min">Loading...</p>
+                    <p class="maxValues" id="day1Max">Loading...</p>
+                </div>
+                <div class = "icons">
+                    <p class="weatherDay" id="day2">Tuesday</p>
+                    <div class="image"><img src="dots.png" class="imgClass" id="img2"></div>
+                    <p class="minValues" id="day2Min">Loading...</p>
+                    <p class="maxValues" id="day2Max">Loading...</p>
+                </div>
+                <div class = "icons">
+                    <p class="weatherDay" id="day3">Wenesday</p>
+                    <div class="image"><img src="dots.png" class="imgClass" id="img3"></div>
+                    <p class="minValues" id="day3Min">Loading...</p>
+                    <p class="maxValues" id="day3Max">Loading...</p>
+                </div>
+                <div class = "icons">
+                    <p class="weatherDay" id="day4">Thursaday</p>
+                    <div class="image"><img src="dots.png" class="imgClass" id="img4"></div>
+                    <p class="minValues" id="day4Min">Loading...</p>
+                    <p class="maxValues" id="day4Max">Loading...</p>
+                </div>
+                <div class = "icons">
+                    <p class="weatherDay" id="day5">Friday</p>
+                    <div class="image"><img src="dots.png" class="imgClass" id="img5"></div>
+                    <p class="minValues" id="day5Min">Loading...</p>
+                    <p class="maxValues" id="day5Max">Loading...</p>
+                </div>
+            </div>
+        </div>
+    </center>
+  </body>
+</html>
