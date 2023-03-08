@@ -4,6 +4,7 @@ const lon = "&lon=-84.386330";
 const apiOptions = "&units=imperial&exclude=minutelyalerts&appid=";
 const apiKey = "f5e714a68db3e76d8aa2c2377b0726f2";
 const url = weatherURL + lat + lon + apiOptions + apiKey;
+
 const button = document.getElementById("GetInfo");
 
 function GetInfo() {
@@ -30,16 +31,10 @@ function GetInfo() {
 
         const id = "day" + day;
         day++;
-        const element = document.getElementById(id);
 
+        const element = document.getElementById(id);
         element.innerText =
-          "  Temp : " +
-          temp +
-          +"  windspeed:" +
-          wind +
-          "  humidity:  " +
-          "," +
-          humidity;
+          "Temp:" + temp + " windspeed:" + wind + "humidity:" + humidity;
       }
     });
 }
